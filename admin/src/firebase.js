@@ -1,15 +1,21 @@
-import firebase from "firebase";
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
-  apiKey: process.env.APP_KEY,
-  authDomain: "netflix-151df.firebaseapp.com",
-  projectId: "netflix-151df",
-  storageBucket: "netflix-151df.appspot.com",
-  messagingSenderId: "316700975498",
-  appId: "1:316700975498:web:15063159b205c1a349a873",
-  measurementId: "G-2ZGE63ES9F",
+  apiKey: "AIzaSyDlc1FS_NpC88-Sle_efDQ7O4MYfWMezuE",
+  authDomain: "netflix-8d56f.firebaseapp.com",
+  projectId: "netflix-8d56f",
+  storageBucket: "netflix-8d56f.appspot.com",
+  messagingSenderId: "193741441792",
+  appId: "1:193741441792:web:e5aebb352fcbc64096c1e5",
+  measurementId: "G-Y96K0M90ZC",
 };
 
-firebase.initializeApp(firebaseConfig);
-const storage = firebase.storage();
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+const storage = getStorage(app); // Use getStorage to get the storage service
+
 export default storage;
+//export default analytics;

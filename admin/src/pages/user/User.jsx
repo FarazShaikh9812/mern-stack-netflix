@@ -44,7 +44,7 @@ export default function User() {
             <span className="userShowTitle">Contact Details</span>
             <div className="userShowInfo">
               <PhoneAndroid className="userShowIcon" />
-              <span className="userShowInfoTitle">+1 123 456 67</span>
+              <span className="userShowInfoTitle">+91 12345 67890</span>
             </div>
             <div className="userShowInfo">
               <MailOutline className="userShowIcon" />
@@ -52,7 +52,7 @@ export default function User() {
             </div>
             <div className="userShowInfo">
               <LocationSearching className="userShowIcon" />
-              <span className="userShowInfoTitle">New York | USA</span>
+              <span className="userShowInfoTitle">Mumbai | India</span>
             </div>
           </div>
         </div>
